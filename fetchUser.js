@@ -36,3 +36,6 @@ return new Promise((resolve, reject) => {
 	}, 250);
 });
 }
+
+//Last updated 0.0.3-BETA
+/* Broken */
