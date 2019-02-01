@@ -1,0 +1,25 @@
+{
+  "name": "gd-fetch",
+  "version": "0.0.3-BETA",
+  "description": "A simple library to interact with Geometry Dash.",
+  "main": "main.js",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geometry",
+    "dash",
+    "gd",
+    "gdf",
+    "fetch",
+    "node-fetch",
+    "geometry-dash",
+    "node-gd"
+  ],
+  "author": "Rageous0",
+  "license": "UNLICENSED"
+}
