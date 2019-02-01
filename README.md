@@ -110,4 +110,4 @@ Most recent version of gd-fetch is recommended as it features more important stu
 
 #### Up to date since?
 
-The README was last updated and written to the 1th of February (2019).
+The README was last updated and written to the 1st of February (2019).
