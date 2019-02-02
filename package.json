@@ -1,27 +1,27 @@
 {
-  "_from": "gd-fetch@0.0.2-BETA",
-  "_id": "gd-fetch@0.0.2-BETA",
+  "_from": "gd-fetch@0.0.2",
+  "_id": "gd-fetch@0.0.2",
   "_inBundle": false,
-  "_integrity": "sha512-iSR1SumjQ4Rao+CqIPxxNpyO9HYVuCzzlVnatFmop7QAg8OoeUMyGg0x77PaqY2ui6315WYYYU8Yc9S0LM/aXg==",
+  "_integrity": "sha512-yV73yCM2SVWiMk8KKxFEHetRWaUfOpusvrBD5G4Z2Iz7be4c/ixBKgkKtXTkX4PWup4aU1FZM65cLRx64ketBQ==",
   "_location": "/gd-fetch",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "gd-fetch@0.0.2-BETA",
+    "raw": "gd-fetch@0.0.2",
     "name": "gd-fetch",
     "escapedName": "gd-fetch",
-    "rawSpec": "0.0.2-BETA",
+    "rawSpec": "0.0.2",
     "saveSpec": null,
-    "fetchSpec": "0.0.2-BETA"
+    "fetchSpec": "0.0.2"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/gd-fetch/-/gd-fetch-0.0.2-BETA.tgz",
-  "_shasum": "c20672fbb51de85d810656fe13bfcbb8476424c3",
-  "_spec": "gd-fetch@0.0.2-BETA",
+  "_resolved": "https://registry.npmjs.org/gd-fetch/-/gd-fetch-0.0.2.tgz",
+  "_shasum": "896d53e4985c44ca1202afa84a8b3491e76d6ed9",
+  "_spec": "gd-fetch@0.0.2",
   "_where": "E:\\test",
   "author": {
     "name": "Rageous0"
@@ -49,5 +49,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.0.2-BETA"
+  "version": "0.0.2"
 }
