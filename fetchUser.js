@@ -19,7 +19,7 @@ return new Promise((resolve, reject) => {
 		x = r.accountid;
 	}).then(async() => {
 		if(isNaN(parseInt(id))) reject({ response: 0, message: 'ID is not a number' });
-		if(parseInt(id).toString().includes('.')) reject({ response: 0, message: 'ID cannot be a decimal' });
+		if(parseInt(id).toString().includes('.')) reject({ response: 0, message: 'ID cannot be a decimal' }); och
 		await fetchQueryUser.push(`targetAccountID=${x}`);
 		await fetch('http://www.boomlings.com/database/getGJUserInfo20.php', {
 			method: 'POST',
@@ -28,7 +28,7 @@ return new Promise((resolve, reject) => {
 		})
 		.then(async(res) => res.text())
 		.then(async(body) => {
-			if(body.startsWith('-1') || body.startsWith(-1) || body.length == 0) reject({ response: 0, message: 'The server did either return -1 or nothing' }));
+			if(body.startsWith('-1') || body.startsWith(-1) || body.length == 0) reject({ response: 0, message: 'The server did either return -1 or nothing' });
 			let result = await DataToMap(body);
 			await resolve({ response: 1, message: null, userid: parseInt(result["2"]), accountid: parseInt(result["16"]), username: result["1"], role: parseInt(result["49"]), stats: { stars: parseInt(result["3"]), secretcoins: parseInt(result["13"]), usercoins: parseInt(result["17"]), diamonds: parseInt(result["46"]), demons: parseInt(result["4"]), cp: parseInt(result["8"]), rank: parseInt(result["30"]) }, social: { youtube: `https://www.youtube.com/channel/${result["20"]}`, twitter: `https://twitter.com/${result["44"]}`, twitch: `https://twitch.tv/${result["44"]}` }});
 		}).catch(error => reject({ response: 0, message: ['Failed getting data', error] }));
