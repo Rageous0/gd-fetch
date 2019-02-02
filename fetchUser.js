@@ -19,7 +19,7 @@ return new Promise((resolve, reject) => {
 		x = r.accountid;
 	}).then(async() => {
 		if(isNaN(parseInt(id))) reject({ response: 0, message: 'ID is not a number' });
-		if(parseInt(id).toString().includes('.')) reject({ response: 0, message: 'ID cannot be a decimal' }); och
+		if(parseInt(id).toString().includes('.')) reject({ response: 0, message: 'ID cannot be a decimal' });
 		await fetchQueryUser.push(`targetAccountID=${x}`);
 		await fetch('http://www.boomlings.com/database/getGJUserInfo20.php', {
 			method: 'POST',
