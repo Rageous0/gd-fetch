@@ -19,5 +19,3 @@ return new Promise((resolve, reject) => {
 	
 });
 }
-
-//Last updated 0.0.1

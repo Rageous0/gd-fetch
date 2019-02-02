@@ -23,16 +23,10 @@ return new Promise((resolve, reject) => {
         	let level = body.split(':');
             let data = level[7];
             setTimeout(() => {
-            	try {
-		            resolve({ response: 1, message: null, data: data.slice(0,250)+'...', file: `${__dirname}/levels/${id}.txt` });
-		            fs.writeFileSync(`${__dirname}/levels/${id}.txt`, data, "UTF-8");
-				} catch(e) {
-					reject({ response: 0, message: ['Download failed', e], data: null, file: null });
-				}
+	            resolve({ response: 1, message: null, data: data.slice(0,250)+'...', file: `${__dirname}/${id}.txt` });
+	            fs.writeFileSync(`${__dirname}/${id}.txt`, data, "UTF-8");
 			}, data.length / 100);
         }).catch(error => reject({ response: 0, message: ['Query failed', error], data: null, file: null }));
     }, 5);
 });
 }
-
-//Last updated v0.0.2

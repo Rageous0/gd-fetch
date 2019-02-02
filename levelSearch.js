@@ -279,24 +279,10 @@ return new Promise((resolve, reject) => {
         for(let i = 0; i <= (9); i++) {
             try {
                 let result = levelDataToMap(content[i]);
-                let isdemon = false;
-                let isauto = false;
                 names.push(result["2"]);
-                ids.push(parseInt(result["1"]));
-                if(parseInt(result["9"])) {
-	                switch(parseInt(result["17"])) {
-	                	case 1:
-		                isdemon = true;
-	                    break;
-	                }
-	                switch(parseInt(result["25"])) {
-	                	case 1:
-		                isauto = true;
-	                    break;
-	                }
-				}
-                diffs.push({ diff: parseInt(result["9"]), isauto: isauto, isdemon: isdemon });
-                creators.push(parseInt(result["6"]));
+                ids.push(result["1"]);
+                diffs.push(result["9"]);
+                creators.push(result["6"]);
             } catch(e) {
                 (e);
             }
@@ -313,4 +299,4 @@ return new Promise((resolve, reject) => {
 });
 }
 
-//Last updated v0.0.2
+//Last updated v0.0.1
