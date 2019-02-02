@@ -29,7 +29,7 @@ return new Promise((resolve, reject) => {
 		.then(async(body) => {
 			if(body.startsWith('-1') || body.startsWith(-1) || body.length < 1) reject({ response: 0, message: 'The server did either return -1 or nothing' });
 			let result = await DataToMap(body);
-			await resolve({ response: 1, message: null, userid: parseInt(result["2"]), accountid: parseInt(result["16"]), username: result["1"], role: parseInt(result["49"]), stats: { stars: parseInt(result["3"]), secretcoins: parseInt(result["13"]), usercoins: parseInt(result["17"]), diamonds: parseInt(result["46"]), demons: parseInt(result["4"]), cp: parseInt(result["8"]), rank: parseInt(result["30"]) }, social: { youtube: result["20"] ? `https://www.youtube.com/channel/${result["20"]}` : "", twitter: result["44"] ? `https://twitter.com/${result["44"]}` : "", twitch: result[45] ? `https://twitch.tv/${result["45"]}` : ""}});
+			await resolve({ response: 1, message: null, userid: parseInt(result["2"]), accountid: parseInt(result["16"]), username: result["1"], role: parseInt(result["49"]), stats: { stars: parseInt(result["3"]), secretcoins: parseInt(result["13"]), usercoins: parseInt(result["17"]), diamonds: parseInt(result["46"]), demons: parseInt(result["4"]), cp: parseInt(result["8"]), rank: parseInt(result["30"]) }, social: { youtube: result["20"].length > 0 ? `https://www.youtube.com/channel/${result["20"]}` : null, twitter: result["44"].length > 0 ? `https://twitter.com/${result["44"]}` : null, twitch: result[45].length > 0 ? `https://twitch.tv/${result["45"]}` : null}});
 		}).catch(error => reject({ response: 0, message: ['Failed getting data', error] }));
 	}).catch(error => reject({ response: 0, message: ['Failed getting ID', error] }));
 });
