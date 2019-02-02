@@ -7,7 +7,7 @@ return new Promise((resolve, reject) => {
 	
 	let latinChr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 	let mailChr = ['.', '@', '-', '_'];
-	if(!name || name.length < 3) reject({ response: 0, message: 'Username cannot be empty and needs to be at least 3 characters', registered: null });
+	if(!name || name.length <= 0) reject({ response: 0, message: 'Username cannot be empty', registered: null });
 	if(pass.length == 0) pass = `${latinChr[Math.floor(Math.random() * latinChr.length)]}${latinChr[Math.floor(Math.random() * (latinChr.length / 2))]}${latinChr[Math.floor(Math.random() * (latinChr.length / 3))]}${latinChr[Math.floor(Math.random() * latinChr.length)]}${latinChr[Math.floor(Math.random() * (latinChr.length / 4))]}${latinChr[Math.floor(Math.random() * (latinChr.length / 2))]}${latinChr[Math.floor(Math.random() * latinChr.length)]}${latinChr[Math.floor(Math.random() * (latinChr.length / 5) + (latinChr.length / 5))]}`;
 	if(pass.length < 6) reject({ response: 0, message: 'Password cannot be empty and needs to be at least 6 characters', registered: null, username: name, email: mail, password: pass });
 	if(!mail || mail.length < 5) reject({ response: 0, message: 'Mail cannot be empty and needs to be at least 5 characters', registered: null, username: name, email: mail, password: pass });

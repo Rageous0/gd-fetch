@@ -1,15 +1,38 @@
 {
-  "name": "gd-fetch",
-  "version": "0.0.3-BETA",
-  "description": "A simple library to interact with Geometry Dash.",
-  "main": "main.js",
+  "_from": "gd-fetch@0.0.2-BETA",
+  "_id": "gd-fetch@0.0.2-BETA",
+  "_inBundle": false,
+  "_integrity": "sha512-iSR1SumjQ4Rao+CqIPxxNpyO9HYVuCzzlVnatFmop7QAg8OoeUMyGg0x77PaqY2ui6315WYYYU8Yc9S0LM/aXg==",
+  "_location": "/gd-fetch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "gd-fetch@0.0.2-BETA",
+    "name": "gd-fetch",
+    "escapedName": "gd-fetch",
+    "rawSpec": "0.0.2-BETA",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2-BETA"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gd-fetch/-/gd-fetch-0.0.2-BETA.tgz",
+  "_shasum": "c20672fbb51de85d810656fe13bfcbb8476424c3",
+  "_spec": "gd-fetch@0.0.2-BETA",
+  "_where": "E:\\test",
+  "author": {
+    "name": "Rageous0"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "node-fetch": "^2.3.0"
   },
+  "deprecated": false,
+  "description": "A simple library to interact with Geometry Dash.",
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "geometry",
     "dash",
@@ -20,6 +43,11 @@
     "geometry-dash",
     "node-gd"
   ],
-  "author": "Rageous0",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "main": "main.js",
+  "name": "gd-fetch",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2-BETA"
 }
