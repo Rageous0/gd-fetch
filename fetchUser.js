@@ -15,9 +15,9 @@ return new Promise((resolve, reject) => {
 	    return map;
 	}
 	let fetchQueryUser = ['gameVersion=21', 'binaryVersion=34', 'gdw=0', 'udid=00000000-52ac-a9bf-2fd2-dbaf2f3f343c', 'uuid=98840428', 'secret=Wmfd2893gb7'];
-	usrch({ search: id.toString(), page: 1 }).then(r => {
-		x = r.accountid;
-	}).then(async() => {
+	usrch({ search: id.toString(), page: 1 }).then(async(r) => {
+		x = await r.accountid;
+
 		if(isNaN(parseInt(id))) reject({ response: 0, message: 'ID is not a number' });
 		if(parseInt(id).toString().includes('.')) reject({ response: 0, message: 'ID cannot be a decimal' });
 		await fetchQueryUser.push(`targetAccountID=${x}`);
