@@ -36,7 +36,7 @@ return new Promise((resolve, reject) => {
                         let user = body.split(':');
                         let username = user[1];
                         let uid = user[3];
-                        let aid = user[22];
+                        let aid = user[21];
                         setTimeout(() => {
 					        resolve({ response: 1, message: null, username: username, userid: parseInt(uid), accountid: parseInt(aid) });
 					    }, 5);
