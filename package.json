@@ -21,7 +21,7 @@
     "node-gd"
   ],
   "author": "Rageous0",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
   "directories": {
     "test": "tests"
   },
